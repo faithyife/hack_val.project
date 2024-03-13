@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 * {
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
@@ -6,6 +7,7 @@
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -24,6 +26,7 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
+
 .navigation {
   display: flex;
   align-items: center;
@@ -75,7 +78,7 @@ section article p {
 }
 
 section .btn-carrier {
-  width: 35%;
+  width: 40%;
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
@@ -93,37 +96,54 @@ section .btn-carrier {
 
 .btn1 {
   background-color: #6fc247;
-  padding: 15px 25px;
+  padding: 14px 32px;
   color: white;
+  border: 1px solid #6fc247;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.btn2 {
+  background-color: transparent;
+  padding: 16px 48px;
+  color: #6fc247;
   border: 1px solid #6fc247;
   border-radius: 10px;
 }
 
-.btn2 {
-  background-color: #e7f5e0;
-  padding: 15px 25px;
-  color: #000;
-  border: 1px solid #86bb69;
-  border-radius: 10px;
+.hero-img {
+  max-width: 90%;
+  margin: 0 auto;
 }
+
+.hero-img img {
+  width: 100%;
+}
+
 .partnership {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 2rem 5rem;
+  margin-bottom: 50px;
 }
+
 .row-1-img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
-.row-1-img .img-box{
+
+.row-1-img .img-box {
   width: 250px;
   height: 75px;
   background-color: #f9f9f9;
 }
-.row-1-img .img-box img{
+
+.row-1-img .img-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -133,7 +153,7 @@ section .btn-carrier {
   text-align: center;
   width: 80%;
   margin: 15px auto;
-  font-size: 17px;
+  font-size: 32px;
   font-weight: 900;
 }
 
@@ -141,106 +161,454 @@ section .btn-carrier {
   text-align: center;
   width: 80%;
   margin: 15px auto;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .why-valutico {
-  margin: auto;
   width: 100%;
   background-color: black;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 60px;
-  padding: 20px;
 }
+
+.why-valutico-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
 .Valutico-info {
   text-align: center;
 }
+
+.Valutico-info h2 {
+  font-size: 40px;
+}
+
+.Valutico-info p {
+  font-size: 20px;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
 .val-box {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 6rem;
+  flex-direction: row;
+}
+
+.val-box h4 {
+  font-size: 24px;
+}
+
+.val-box p {
+  font-size: 20px;
 }
 
 .last-section {
-  margin: 3rem 10rem;
+  margin: 3rem 5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   gap: 2.5rem;
+  max-width: 95%;
 }
+
 .head {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
+
 .head h3 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 1rem;
 }
+
 .head p {
-  width: 60%;
+  width: 94%;
   text-align: center;
+  font-size: 20px;
 }
+
 .valbox {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .val-img {
   width: 100%;
-  height: 100%;
 }
+
 .val-img img {
   max-width: 100%;
-  height:100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
+
 .valbox .valtext {
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
-  gap:2rem;
 }
-.aside p {
-  margin-top: 0.5rem;
+
+.valtext {
+  padding: 32px 0;
+}
+
+.aside p:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.aside p:last-child {
   width: 80%;
-}
-.req {
-  width: 14rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #6fc247;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  border: 1px solid #6fc247;
-  text-decoration: none;
+  font-size: 20px;
 }
 
-.icon {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  left: 2px;
-  top: 5px;
-  margin-left: 2px;
-  margin-top: 5px;
+@media only screen and (max-width: 1041px) {
+  .btn-holder .btn1 {
+    display: none;
+  }
+
+  .fas {
+    font-size: 30px;
+  }
+
+  .new,
+  .nav-details .fa-times {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-details {
+    padding: 2rem 3rem;
+    box-shadow: 1px 3px 6px -1px rgb(165, 165, 165);
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: -200rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .nav-details.active {
+    top: 0;
+  }
+
+  .nav-details ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #btn-mobile {
+    display: flex;
+  }
+
+  .nav-details .fa-times {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 28px;
+  }
+
+  header {
+    padding: 2rem 2.5rem;
+  }
+
+  section article h1 {
+    font-size: 40px;
+  }
+
+  section article p {
+    font-size: 20px;
+  }
+
+  .btn1 {
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .btn2 {
+    padding: 15px 25px;
+    border-radius: 8px;
+  }
+
+  .partnership {
+    padding: 0;
+    max-width: 95%;
+    margin: 0 auto 50px;
+  }
+
+  .row-1-img {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+  }
+
+  .partner-title h3 {
+    font-size: 24px;
+  }
+
+  .partner-title p {
+    font-size: 18px;
+  }
+
+  .why-valutico-container {
+    padding: 20px 0;
+  }
+
+  .Valutico-info h2 {
+    font-size: 24px;
+  }
+
+  .Valutico-info p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .val-box {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .val-box h4 {
+    font-size: 18px;
+  }
+
+  .val-box p {
+    font-size: 16px;
+  }
+
+  .last-section {
+    margin: 1.5rem auto;
+    gap: 1rem;
+  }
+
+  .box {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .head h3 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+
+  .head p {
+    font-size: 18px;
+  }
+
+  .valbox {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .val-img {
+    width: 100%;
+  }
+
+  .valtext {
+    padding: 0;
+  }
+
+  .aside p:first-child {
+    font-size: 18px;
+  }
+
+  .aside p:last-child {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 800px) {
+  .btn-holder .btn1 {
+    display: none;
+  }
+
+  .new,
+  .nav-details .fa-times {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-details {
+    padding: 2rem 3rem;
+    box-shadow: 1px 3px 6px -1px rgb(165, 165, 165);
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: -200rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .nav-details.active {
+    top: 0;
+  }
+
+  .nav-details ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #btn-mobile {
+    display: flex;
+  }
+
+  .nav-details .fa-times {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 28px;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  section article h1 {
+    font-size: 20px;
+  }
+
+  section article p {
+    font-size: 10px;
+  }
+
+  section .btn-carrier {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+
+
+  .btn1 {
+    padding: 7px 15px;
+    border-radius: 8px;
+  }
+
+  .btn2 {
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .partnership {
+    padding: 0;
+    max-width: 90%;
+    margin: 0 auto 30px;
+  }
+
+  .row-1-img {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+
+.row-1-img .img-box {
+  width: 150px;
+  height: auto;
+}
+
+  .partner-title h3 {
+    font-size: 20px;
+  }
+
+  .partner-title p {
+    font-size: 10px;
+  }
+
+  .why-valutico-container {
+    padding: 15px 0;
+  }
+
+  .Valutico-info h2 {
+    font-size: 18px;
+  }
+
+  .Valutico-info p {
+    font-size: 10px;
+    max-width: 100%;
+  }
+
+  .val-box {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .val-box h4 {
+    font-size: 10px;
+  }
+
+  .val-box p {
+    font-size: 10px;
+  }
+
+  .last-section {
+    margin: 1.5rem 2rem;
+    gap: 1rem;
+  }
+
+  .head h3 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+
+  .head p {
+    font-size: 10px;
+  }
+
+  .valbox {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .val-img {
+    width: 100%;
+  }
+
+  .valtext {
+    padding: 0;
+  }
+
+  .aside p:first-child {
+    font-size: 10px;
+  }
+
+  .aside p:last-child {
+    width: 60%;
+    font-size: 10px;
+  }
+}
+
+
+
+/* @media only screen and (max-width: 768px) {
   .btn-holder .btn1 {
     display: none;
   }
@@ -286,7 +654,190 @@ section .btn-carrier {
   header {
     padding: 2rem 2.5rem;
   }
-}
+  section article {
+    width: 70%;
+    margin: 50px auto;
+  }
+
+  section article h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  section article p {
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 17px;
+  }
+
+  section .btn-carrier {
+    width: 15%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #btn-mobile {
+    display: none;
+  }
+
+  .new,
+  .nav-details .fa-times {
+    display: none;
+  }
+
+  .btn1 {
+    background-color: #6fc247;
+    padding: 5ch 50px;
+    color: white;
+    border: 1px solid #6fc247;
+    border-radius: 10px;
+  }
+
+  .btn2 {
+    background-color: #e7f5e0;
+    padding: 15px 50px;
+    color: #000;
+    border: 1px solid #86bb69;
+    border-radius: 10px;
+  }
+  .partnership {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 5rem;
+  }
+  .row-1-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .row-1-img .img-box {
+    width: 250px;
+    height: 75px;
+    background-color: #f9f9f9;
+  }
+  .row-1-img .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .partner-title h3 {
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 17px;
+    font-weight: 900;
+  }
+
+  .partner-title p {
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .why-valutico {
+    margin: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px;
+  }
+  .Valutico-info {
+    text-align: center;
+  }
+  .val-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .last-section {
+    margin: 3rem 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .head h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .head p {
+    width: 60%;
+    text-align: center;
+  }
+  .valbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .val-img {
+    width: 100%;
+    height: 100%;
+  }
+  .val-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .valbox .valtext {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+/* gap: 2rem;
+  }
+  .aside p {
+    margin-top: 0.5rem;
+    width: 80%;
+  }
+  .req {
+    width: 14rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6fc247;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #6fc247;
+    text-decoration: none;
+  } */
+/* 
+  .icon {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 2px;
+    top: 5px;
+    margin-left: 2px;
+    margin-top: 5px;
+  } */
+/* } */
 
 /* @media only screen and (max-width: 830px) {
     .container {
